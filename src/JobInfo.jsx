@@ -1,6 +1,7 @@
 import React from 'react'
 import Duties from './Duties'
-const JobInfo = ({ company, title, location, dates, duties }) => {
+const JobInfo = ({ jobs, currentItem }) => {
+  const { company, title, location, dates, duties } = jobs[currentItem]
   return (
     <div className="job-info">
       <h3>{title}</h3>
